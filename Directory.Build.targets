@@ -1,0 +1,13 @@
+<Project>
+
+  <!--
+    The strong-name key (kmyuhkyuk.pfx) is not part of the repository.
+    Without it, signing must be disabled, otherwise csc fails with CS7027.
+    If you own the key, drop it next to the project file and signing stays on.
+  -->
+  <PropertyGroup Condition="!Exists('$(MSBuildProjectDirectory)\kmyuhkyuk.pfx')">
+    <SignAssembly>false</SignAssembly>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+
+</Project>

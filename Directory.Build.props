@@ -1,0 +1,17 @@
+<Project>
+
+  <!--
+    Path to the SPT / EFT installation the mod is compiled against.
+    Override on the command line or in the environment, e.g.:
+
+      msbuild KmyTarkovApi.sln /p:SPTGamePath="D:\Games\SPT 4.1.6 essential"
+
+    The default matches the 4.1.x install used for this branch.
+  -->
+  <PropertyGroup>
+    <SPTGamePath Condition="'$(SPTGamePath)' == ''">D:\Games\SPT 4.1.6 essential</SPTGamePath>
+    <SptManagedDir>$(SPTGamePath)\EscapeFromTarkov_Data\Managed</SptManagedDir>
+    <SptBepInExCoreDir>$(SPTGamePath)\BepInEx\core</SptBepInExCoreDir>
+  </PropertyGroup>
+
+</Project>

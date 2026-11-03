@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -17,7 +17,7 @@ namespace Build
             var sha = Copy.GetTipSha(args.ElementAtOrDefault(1));
 
             const string modPath =
-                @"R:\Battlestate Games\Client.0.16.9.0.40087\BepInEx\plugins\kmyuhkyuk-KmyTarkovApi";
+                @"D:\Games\SPT 4.1.6 essential\BepInEx\plugins\kmyuhkyuk-KmyTarkovApi";
 
             var modDirectoryName = new DirectoryInfo(modPath).Name;
 
